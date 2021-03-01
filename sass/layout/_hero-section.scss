@@ -1,0 +1,26 @@
+.hero-section{
+     
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // start for big screens only
+    margin-right: 30rem;
+    margin-left: 30rem;
+    border-right: 5px solid $color-white;
+    border-left: 5px solid $color-white;
+    // end   for big screens only
+    &__title{
+        padding: 3rem;
+        font-family: $font-title;
+        font-size: 50px;
+    }
+    &__cta{
+        margin-top: 40px;
+        &__btn:hover{
+            color: $color-black;
+        }
+    }
+   
+}
