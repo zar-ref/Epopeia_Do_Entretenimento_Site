@@ -1,0 +1,19 @@
+.books-section{
+
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start; 
+
+    &__bookName{
+        display: block;
+        margin-left: 6rem;
+            &__title{ 
+        }
+
+    }
+
+    &__bookDescrition{
+        display: block;
+        margin-left:6rem;
+    }
+}

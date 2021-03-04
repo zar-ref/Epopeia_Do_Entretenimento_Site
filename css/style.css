@@ -1,6 +1,12 @@
 .btn {
   border-radius: 6px; }
 
+.vertical-white-line {
+  margin-right: 30rem;
+  margin-left: 30rem;
+  border-right: 5px solid #E4E6EB;
+  border-left: 5px solid #E4E6EB; }
+
 *,
 *::after,
 *::before {
@@ -30,25 +36,30 @@ body {
   font-family: "Nunito", sans-serif; }
 
 .cta-paragraph {
-  font-size: 40px; }
+  font-size: 4rem; }
 
 .base-p-color {
   color: #E4E6EB; }
+
+.sub-title {
+  font-size: 3rem; }
+
+.book-title {
+  font-size: 2.2rem; }
+
+.book-description-text {
+  font-size: 1.8rem; }
 
 .hero-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin-right: 30rem;
-  margin-left: 30rem;
-  border-right: 5px solid #E4E6EB;
-  border-left: 5px solid #E4E6EB; }
+  text-align: center; }
   .hero-section__title {
     padding: 3rem;
     font-family: "Akaya Telivigala", cursive;
-    font-size: 50px; }
+    font-size: 5rem; }
   .hero-section__cta {
     margin-top: 40px; }
     .hero-section__cta__btn:hover {
@@ -60,8 +71,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin-right: 30rem;
-  margin-left: 30rem;
-  border-right: 5px solid #E4E6EB;
-  border-left: 5px solid #E4E6EB; }
+  text-align: left; }
+  .references-section__title {
+    margin-top: 4rem; }
+
+.books-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+  .books-section__bookName {
+    display: block;
+    margin-left: 6rem; }
+  .books-section__bookDescrition {
+    display: block;
+    margin-left: 6rem; }
