@@ -12,7 +12,7 @@
     }
     &__cta{
         margin-top: 40px;
-
+        font-weight: bold;
         @include respond(phone) {
             margin-top: 20px;
         }
@@ -70,6 +70,18 @@
         @include respond(phone-small) {
             width: 85%;
             
+        }
+    }
+
+    &__description{
+        margin-top: 4rem;
+        @include respond(phone) {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+
+        &__p{
+            font-weight: bold;
         }
     }
 }

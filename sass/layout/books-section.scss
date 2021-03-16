@@ -3,11 +3,14 @@
     display:flex;
     flex-direction: column;
     justify-content:flex-start; 
+    padding-top: 6rem;
+
 
     &__bookName{
         display: block;
         margin-left: 6rem;
             &__title{ 
+                font-weight: bold;
         }
 
     }
@@ -15,5 +18,6 @@
     &__bookDescrition{
         display: block;
         margin-left:6rem;
+        margin-right: 3rem;
     }
 }

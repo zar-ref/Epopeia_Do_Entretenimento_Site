@@ -18,6 +18,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .btn {
   border-radius: 6px; }
 
+.book-margin-bottom {
+  margin-bottom: 4rem !important; }
+
 .vertical-white-line {
   margin-right: 30rem;
   margin-left: 30rem;
@@ -29,6 +32,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
       margin-left: 0;
       border-right: none;
       border-left: none; } }
+
+.quote-left {
+  color: #E4E6EB;
+  font-size: 40px;
+  margin: .5rem; }
 
 *,
 *::after,
@@ -80,7 +88,7 @@ body {
 .book-title {
   font-size: 2.2rem; }
 
-.book-description-text {
+.description-text {
   font-size: 1.8rem; }
 
 .hero-section {
@@ -93,7 +101,8 @@ body {
     .hero-section {
       width: 100%; } }
   .hero-section__cta {
-    margin-top: 40px; }
+    margin-top: 40px;
+    font-weight: bold; }
     @media only screen and (max-width: 48em) {
       .hero-section__cta {
         margin-top: 20px; } }
@@ -135,6 +144,14 @@ body {
     @media only screen and (max-width: 40em) {
       .hero-section__cover {
         width: 85%; } }
+  .hero-section__description {
+    margin-top: 4rem; }
+    @media only screen and (max-width: 48em) {
+      .hero-section__description {
+        margin-left: 2rem;
+        margin-right: 2rem; } }
+    .hero-section__description__p {
+      font-weight: bold; }
 
 .references-section {
   margin-top: 0;
@@ -149,10 +166,14 @@ body {
 .books-section {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  padding-top: 6rem; }
   .books-section__bookName {
     display: block;
     margin-left: 6rem; }
+    .books-section__bookName__title {
+      font-weight: bold; }
   .books-section__bookDescrition {
     display: block;
-    margin-left: 6rem; }
+    margin-left: 6rem;
+    margin-right: 3rem; }
