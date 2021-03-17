@@ -177,3 +177,11 @@ body {
     display: block;
     margin-left: 6rem;
     margin-right: 3rem; }
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem; }
