@@ -10,12 +10,17 @@
        border-left: 5px solid $color-white;
        // end for big screens only
 
-       @include respond(phone-small) { 
-              margin-right: 0;
-              margin-left: 0;    
+       @include respond(tab-port) { 
+              margin-right: 2rem;
+              margin-left: 2rem;    
               border-right: none;
               border-left: none;
-          }
+       }
+
+       @include respond(phone){
+              margin-right: 0;
+              margin-left: 0;  
+       }
           
   
 }

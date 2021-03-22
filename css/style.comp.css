@@ -1,0 +1,193 @@
+/*
+0 - 640px:      Phone
+640 - 768px:    Tablet portrait
+1024 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1600px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+.btn {
+  border-radius: 6px; }
+
+.book-margin-bottom {
+  margin-bottom: 4rem !important; }
+
+.vertical-white-line {
+  margin-right: 30rem;
+  margin-left: 30rem;
+  border-right: 5px solid #E4E6EB;
+  border-left: 5px solid #E4E6EB; }
+  @media only screen and (max-width: 64em) {
+    .vertical-white-line {
+      margin-right: 2rem;
+      margin-left: 2rem;
+      border-right: none;
+      border-left: none; } }
+  @media only screen and (max-width: 48em) {
+    .vertical-white-line {
+      margin-right: 0;
+      margin-left: 0; } }
+
+.quote-left {
+  color: #E4E6EB;
+  font-size: 40px;
+  margin: .5rem; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  background-color: #18191A;
+  font-size: 62.5%;
+  color: #E4E6EB;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  -webkit-background-attachment: fixed;
+  background-attachment: fixed;
+  -webkit-background-position: center center;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 80.375em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 64em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 100em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  overflow-x: hidden;
+  background-color: #18191A;
+  font-family: "Nunito", sans-serif; }
+
+.cta-paragraph {
+  font-size: 4rem; }
+
+.base-p-color {
+  color: #E4E6EB; }
+
+.sub-title {
+  font-size: 3rem; }
+
+.book-title {
+  font-size: 2.2rem; }
+
+.description-text {
+  font-size: 1.8rem; }
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  @media only screen and (max-width: 48em) {
+    .hero-section {
+      width: 100%; } }
+  .hero-section__cta {
+    margin-top: 40px;
+    font-weight: bold; }
+    @media only screen and (max-width: 48em) {
+      .hero-section__cta {
+        margin-top: 20px; } }
+    .hero-section__cta__btn:hover {
+      color: #18191A; }
+  .hero-section__lettering {
+    margin-top: -10rem;
+    width: 50rem;
+    height: 40rem;
+    max-width: 80rem;
+    max-height: 50rem;
+    display: block;
+    background-size: cover;
+    background-image: url("/img/logo.png");
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media only screen and (max-width: 48em) {
+      .hero-section__lettering {
+        width: 100%;
+        background-size: contain; } }
+    @media only screen and (max-width: 40em) {
+      .hero-section__lettering {
+        width: 100%; } }
+  .hero-section__cover {
+    margin-top: -10rem;
+    width: 50rem;
+    height: 50rem;
+    max-width: 80rem;
+    max-height: 50rem;
+    display: block;
+    background-size: cover;
+    background-image: url("/img/cover_resized.png");
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media only screen and (max-width: 48em) {
+      .hero-section__cover {
+        width: 85%;
+        background-size: contain; } }
+    @media only screen and (max-width: 40em) {
+      .hero-section__cover {
+        width: 85%; } }
+  .hero-section__description {
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
+    .hero-section__description__p {
+      font-weight: bold; }
+
+.references-section {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left; }
+  .references-section__title {
+    margin-top: 4rem; }
+
+.books-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 6rem; }
+  .books-section__bookName {
+    display: block;
+    margin-left: 6rem; }
+    .books-section__bookName__title {
+      font-weight: bold; }
+  .books-section__bookDescrition {
+    display: block;
+    margin-left: 6rem;
+    margin-right: 3rem; }
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem; }
+  @media only screen and (max-width: 48em) {
+    .footer-section {
+      margin-right: 2rem;
+      margin-left: 2rem; } }

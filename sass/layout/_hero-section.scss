@@ -55,7 +55,7 @@
         max-height: 50rem; 
         display: block;
         background-size: cover;
-        background-image: url("/img/cover.png");
+        background-image: url("/img/cover_resized.png");
         background-position: center;
         background-repeat: no-repeat;
         @include respond(phone) {
@@ -75,10 +75,12 @@
 
     &__description{
         margin-top: 4rem;
-        @include respond(phone) {
+
+     
             margin-left: 2rem;
             margin-right: 2rem;
-        }
+      
+
 
         &__p{
             font-weight: bold;
